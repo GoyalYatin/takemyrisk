@@ -1,7 +1,5 @@
 "use strict";
 
-const CONFIG_URL = "config.json";
-
 const $ = (selector, root = document) => root.querySelector(selector);
 const list = (value) => (Array.isArray(value) ? value : []);
 const hasText = (value) => typeof value === "string" && value.trim().length > 0;
@@ -437,8 +435,8 @@ function buildFooter(config) {
 
 function validateConfig(config) {
   if (!config || typeof config !== "object") throw new Error("The configuration must be a JSON object");
-  if (!config.site || !hasText(config.site.name)) throw new Error("site.name is required in config.json");
-  if (!config.hero || !hasText(config.hero.title)) throw new Error("hero.title is required in config.json");
+  if (!config.site || !hasText(config.site.name)) throw new Error("site.name is required in the embedded configuration");
+  if (!config.hero || !hasText(config.hero.title)) throw new Error("hero.title is required in the embedded configuration");
   return config;
 }
 
@@ -478,17 +476,16 @@ function render(config) {
   app.replaceChildren(...sections);
 }
 
-async function init() {
+function init() {
   try {
-    const response = await fetch(CONFIG_URL, { cache: "no-cache" });
-    if (!response.ok) throw new Error(`config.json returned HTTP ${response.status}`);
-    render(await response.json());
+    const source = $("#site-config");
+    if (!source) throw new Error("Embedded site configuration was not found");
+    render(JSON.parse(source.textContent));
   } catch (error) {
     console.error("Website configuration error:", error);
     showStatus(
       "The website content could not be loaded",
-      `${error.message}. Check that config.json contains valid JSON and serve this folder through a local web server.`,
-      "python -m http.server 8000"
+      `${error.message}. Check that the JSON inside the site-config block in index.html is valid.`
     );
   }
 }

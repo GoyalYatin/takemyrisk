@@ -4,22 +4,256 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Independent chartered accountant providing tax, accounting, compliance and advisory services." />
-  <meta name="theme-color" content="#153e52" />
-  <title>Chartered Accountant</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23153e52'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia,serif' font-size='25' font-weight='700' fill='white'%3ECA%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#07519a" />
+  <title>Take My Risk | Tax, Accounting &amp; Business Advisory</title>
+  <link rel="icon" href="logo-icon.png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div id="app" aria-live="polite">
-    <div class="app-status" role="status">
-      <div class="app-status__mark" aria-hidden="true">CA</div>
-      <h1>Loading website…</h1>
-      <p>Reading content from config.json.</p>
-    </div>
-  </div>
+  <div id="app"></div>
   <noscript>
-    <div class="noscript">This website needs JavaScript to read its content from config.json.</div>
+    <div class="noscript">This website needs JavaScript enabled to render its embedded content.</div>
   </noscript>
+
+  <script id="site-config" type="application/json">
+{
+  "_instructions": "Dummy content only. Replace names, claims, credentials, contact details and testimonials before publishing.",
+  "site": {
+    "language": "en",
+    "name": "Take My Risk",
+    "shortName": "TMR",
+    "logo": {
+      "path": "logo.png",
+      "svgPath": "logo.svg",
+      "iconPath": "logo-icon.png",
+      "alt": "Take My Risk"
+    },
+    "designation": "Chartered Accountant",
+    "credentials": "ACA, M.Com",
+    "pageTitle": "Take My Risk | Tax, Accounting & Business Advisory",
+    "description": "Independent chartered accountant helping individuals, professionals and growing businesses with taxation, accounting, compliance and practical financial advice.",
+    "theme": {
+      "primary": "#07519a",
+      "primaryDark": "#0d1117",
+      "accent": "#2f75c8",
+      "background": "#f4f7fa",
+      "surface": "#ffffff",
+      "soft": "#e8f0f8",
+      "text": "#10151b",
+      "muted": "#5c6670"
+    }
+  },
+  "ui": {
+    "skipLink": "Skip to main content",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu",
+    "loadingTitle": "Loading website…",
+    "loadingMessage": "Reading embedded website content.",
+    "errorTitle": "The website content could not be loaded",
+    "errorMessage": "Check that the embedded site configuration contains valid JSON."
+  },
+  "navigation": {
+    "ariaLabel": "Main navigation",
+    "items": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Approach", "href": "#approach" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": { "label": "Book a consultation", "href": "#contact" }
+  },
+  "hero": {
+    "eyebrow": "Independent chartered accountant",
+    "title": "Clear numbers. Confident decisions.",
+    "subtitle": "Practical tax, accounting and compliance support for individuals, professionals and owner-managed businesses.",
+    "primaryButton": { "label": "View services", "href": "#services" },
+    "secondaryButton": { "label": "Discuss your needs", "href": "#contact" },
+    "highlights": [
+      "Direct access to your CA",
+      "Plain-language guidance",
+      "Secure, digital workflow"
+    ],
+    "panel": {
+      "label": "How I can help",
+      "title": "Less time on compliance. More time on what matters.",
+      "items": ["Income tax & GST", "Accounts & reporting", "Business setup & compliance"]
+    }
+  },
+  "profile": {
+    "eyebrow": "About",
+    "title": "Professional advice with a personal approach",
+    "lead": "I help clients understand their finances, meet their obligations and plan their next move with confidence.",
+    "paragraphs": [
+      "With over 11 years of experience across taxation, accounting and business advisory, I work directly with every client and tailor the engagement to their actual needs.",
+      "My practice supports salaried individuals, independent professionals, startups and small businesses with responsive service, dependable timelines and clear communication."
+    ],
+    "highlights": [
+      { "title": "Personal attention", "text": "Work directly with the professional responsible for your engagement." },
+      { "title": "Practical advice", "text": "Understand the why, not just the filing requirement." },
+      { "title": "Proactive support", "text": "Stay ahead of deadlines and avoid last-minute surprises." }
+    ],
+    "card": {
+      "initials": "TMR",
+      "name": "Take My Risk",
+      "role": "Chartered Accountant",
+      "credentials": "ACA, M.Com",
+      "membershipLabel": "ICAI membership",
+      "membershipValue": "000000 (sample)",
+      "experienceLabel": "Experience",
+      "experienceValue": "11+ years",
+      "focusLabel": "Focus",
+      "focusValue": "Individuals, startups & SMEs"
+    }
+  },
+  "servicesSection": {
+    "eyebrow": "Services",
+    "title": "Support for every financial milestone",
+    "subtitle": "Choose a focused engagement or combine services into ongoing support for your finances and compliance."
+  },
+  "services": [
+    {
+      "number": "01",
+      "title": "Income Tax",
+      "description": "Preparation, filing and practical planning for individuals, professionals and business owners.",
+      "features": ["Income tax returns", "Advance tax planning", "Capital gains guidance", "Notices and assessments"]
+    },
+    {
+      "number": "02",
+      "title": "GST Compliance",
+      "description": "End-to-end GST assistance designed to keep registrations, returns and reconciliations on track.",
+      "features": ["GST registration", "Monthly and quarterly returns", "Annual returns", "Reconciliation support"]
+    },
+    {
+      "number": "03",
+      "title": "Accounting & Reporting",
+      "description": "Reliable books and useful reports that provide a clear view of business performance.",
+      "features": ["Bookkeeping review", "Year-end accounts", "Management reporting", "Cash-flow insights"]
+    },
+    {
+      "number": "04",
+      "title": "Business Setup",
+      "description": "Guidance on choosing a structure and completing the registrations needed to start well.",
+      "features": ["Entity selection", "Company or LLP setup", "PAN, TAN and GST", "Initial compliance calendar"]
+    },
+    {
+      "number": "05",
+      "title": "Audit & Assurance",
+      "description": "Independent review and assurance services delivered with care and professional rigour.",
+      "features": ["Tax audit", "Internal controls review", "Financial statement review", "Audit readiness"]
+    },
+    {
+      "number": "06",
+      "title": "Business Advisory",
+      "description": "Decision-ready financial analysis for owners navigating growth, change or new opportunities.",
+      "features": ["Budgets and forecasts", "Business performance review", "Working capital planning", "Virtual finance support"]
+    }
+  ],
+  "statistics": {
+    "ariaLabel": "Practice highlights",
+    "items": [
+      { "value": "11+", "label": "Years of experience" },
+      { "value": "150+", "label": "Clients assisted" },
+      { "value": "4.9/5", "label": "Sample client rating" },
+      { "value": "1:1", "label": "Direct professional access" }
+    ]
+  },
+  "approach": {
+    "eyebrow": "My approach",
+    "title": "Simple, structured and transparent",
+    "subtitle": "A straightforward process keeps every engagement focused and easy to follow.",
+    "steps": [
+      { "number": "1", "title": "Understand", "text": "We begin with your goals, current position and immediate priorities." },
+      { "number": "2", "title": "Plan", "text": "You receive a clear scope, document checklist, timeline and fee." },
+      { "number": "3", "title": "Deliver", "text": "I complete the work, keep you informed and explain the outcome." },
+      { "number": "4", "title": "Support", "text": "Where needed, we set reminders and next steps for ongoing compliance." }
+    ]
+  },
+  "testimonialSection": {
+    "eyebrow": "Client feedback",
+    "title": "Trusted for clarity and responsiveness",
+    "subtitle": "The examples below are fictional placeholders for this starter website."
+  },
+  "testimonials": [
+    {
+      "quote": "The tax position was explained clearly, the document list was precise, and everything was completed well before the deadline.",
+      "author": "Rohan S.",
+      "context": "Independent consultant — sample testimonial"
+    },
+    {
+      "quote": "I finally have monthly reports I can understand and use. The advice is practical, timely and always connected to our business goals.",
+      "author": "Mira K.",
+      "context": "Small business owner — sample testimonial"
+    }
+  ],
+  "faqSection": {
+    "eyebrow": "FAQ",
+    "title": "Common questions",
+    "subtitle": "A few useful details before we begin."
+  },
+  "faqs": [
+    {
+      "question": "Do you work with clients remotely?",
+      "answer": "Yes. Documents, meetings and approvals can be handled through a secure digital workflow, subject to the requirements of the engagement."
+    },
+    {
+      "question": "How are professional fees decided?",
+      "answer": "Fees depend on the scope, complexity and expected time involved. You receive a written scope and fee before work begins."
+    },
+    {
+      "question": "What should I bring to the first conversation?",
+      "answer": "A short summary of what you need and any relevant notices, prior returns or financial statements is usually enough for an initial discussion."
+    },
+    {
+      "question": "Can you support an ongoing monthly engagement?",
+      "answer": "Yes. Recurring accounting, reporting and compliance support can be arranged around your business cycle and reporting needs."
+    }
+  ],
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s make your finances easier to manage",
+    "subtitle": "Share a brief outline of what you need. This demo opens your email application—no information is stored by the website.",
+    "details": [
+      { "icon": "pin", "label": "Office", "value": "210, Cedar Business Park, Pune, Maharashtra 411001", "href": "https://maps.google.com/?q=Pune%2C%20Maharashtra" },
+      { "icon": "phone", "label": "Phone", "value": "+91 90000 00000", "href": "tel:+919000000000" },
+      { "icon": "mail", "label": "Email", "value": "hello@tmr.example", "href": "mailto:hello@tmr.example" },
+      { "icon": "clock", "label": "Availability", "value": "Monday–Friday, 10:00 AM–6:00 PM" }
+    ],
+    "form": {
+      "recipient": "hello@tmr.example",
+      "subjectPrefix": "Website enquiry",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Full name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "phoneLabel": "Phone number (optional)",
+      "phonePlaceholder": "+91 00000 00000",
+      "serviceLabel": "Service needed",
+      "servicePlaceholder": "Select a service",
+      "serviceOptions": ["Income Tax", "GST Compliance", "Accounting & Reporting", "Business Setup", "Audit & Assurance", "Business Advisory", "Other"],
+      "messageLabel": "How can I help?",
+      "messagePlaceholder": "Briefly describe what you need",
+      "submitLabel": "Continue in email app",
+      "privacyNote": "Submitting opens your default email application. Review the message there before sending.",
+      "successMessage": "Your email application should now be open. Please review and send the message."
+    }
+  },
+  "footer": {
+    "summary": "Independent chartered accountancy services for individuals, professionals and growing businesses.",
+    "contactHeading": "Start a conversation",
+    "emailLabel": "Email TMR",
+    "emailHref": "mailto:hello@tmr.example",
+    "copyright": "© {year} Take My Risk. All rights reserved.",
+    "disclaimer": "Illustrative website only. Replace all dummy credentials, claims, contact details and testimonials before use.",
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  }
+}
+  </script>
   <script src="js/app.js" defer></script>
 </body>
 </html>

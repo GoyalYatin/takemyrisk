@@ -15,14 +15,14 @@
     "pageTitle": "Take My Risk | Tax, Accounting & Business Advisory",
     "description": "Independent chartered accountant helping individuals, professionals and growing businesses with taxation, accounting, compliance and practical financial advice.",
     "theme": {
-      "primary": "#153e52",
-      "primaryDark": "#0b2734",
-      "accent": "#c08b3e",
-      "background": "#fbfaf7",
+      "primary": "#07519a",
+      "primaryDark": "#0d1117",
+      "accent": "#2f75c8",
+      "background": "#f4f7fa",
       "surface": "#ffffff",
-      "soft": "#eef3f2",
-      "text": "#17252d",
-      "muted": "#60717a"
+      "soft": "#e8f0f8",
+      "text": "#10151b",
+      "muted": "#5c6670"
     }
   },
   "ui": {
@@ -30,10 +30,9 @@
     "menuOpen": "Open navigation menu",
     "menuClose": "Close navigation menu",
     "loadingTitle": "Loading website…",
-    "loadingMessage": "Reading content from config.json.",
+    "loadingMessage": "Reading embedded website content.",
     "errorTitle": "The website content could not be loaded",
-    "errorMessage": "Check that config.json contains valid JSON and serve this folder through a local web server.",
-    "errorHint": "For example: python -m http.server 8000"
+    "errorMessage": "Check that the embedded site configuration contains valid JSON."
   },
   "navigation": {
     "ariaLabel": "Main navigation",
